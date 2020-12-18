@@ -1,0 +1,46 @@
+</div></div>{include file="basics/colors"}{include file="basics/global"}{include file="basics/quicks"}
+<div class="fed-foot-info fed-part-layout fed-back-whits">
+	<div class="fed-part-case">
+		<p class="fed-text-center fed-text-black">{$vfedcc['main']['foot']}</p>
+        <p class="fed-text-center fed-text-black"><span style="color:#000;text-align:center;">本站内容收集于互联网，本站不承担任何由于内容的合法性及健康性所引起的争议和法律责任,如有疑问请邮箱发送</span></p>
+		{if$maccms.site_email}
+		<p class="fed-text-center fed-text-black">邮箱：{$maccms.site_email}</p>
+      	<p class="fed-text-center fed-text-black"><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1276374802'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1276374802%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> <script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1278762278&web_id=1278762278"></script></p>
+      		<p class="fed-text-center fed-text-black fed-foot-maps fed-font-size">
+			<a class="fed-font-xiv" href="{:mac_url('rss/index')}" target="_blank">RSS订阅</a>
+			<span class="fed-font-xiv">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv" href="/sitemap.xml" target="_blank">百度蜘蛛</a>
+			<span class="fed-font-xiv">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv" href="{:mac_url('rss/google')}" target="_blank">谷歌地图</a>
+			<span class="fed-font-xiv">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv" href="{:mac_url('rss/sm')}" target="_blank">神马爬虫</a>
+			<span class="fed-font-xiv fed-hide-xs">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv fed-hide-xs" href="{:mac_url('rss/sogou')}" target="_blank">搜狗蜘蛛</a>
+			<span class="fed-font-xiv fed-hide-xs">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv fed-hide-xs" href="{:mac_url('rss/so')}" target="_blank">奇虎地图</a>
+			<span class="fed-font-xiv fed-hide-xs">&nbsp;-&nbsp;</span>
+			<a class="fed-font-xiv fed-hide-xs" href="{:mac_url('rss/bing')}" target="_blank">必应爬虫</a>
+		</p>
+		{/if}
+		<p class="fed-text-center fed-text-black">&copy;&nbsp;{:date('Y')}&nbsp;Theme&nbsp;by&nbsp;<a class="fed-font-xiv" href="/" target="_blank">{$vfedcc['main']['copy']|mac_default='vfed&nbsp;'.$version}</a>&nbsp;{$maccms.site_url}</p>
+		<p class="fed-text-center fed-text-black"><a class="fed-font-xiv" href="/" target="_blank">{$maccms.site_name}</a></p>
+	</div>
+</div>
+<div class="fed-tabr-advs fed-part-zero fed-back-whits">
+	<!--注释<a class="fed-part-advs fed-text-center fed-font-xvi" href="javascript:;">×</a>-->
+	{$vfedcc['advs']['home']['foot']}
+</div>
+<!--<?php include_once("baidu_js_push.php") ?>百度自动推送 -->
+<!--百度统计开始 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bb95c830cef74cddc155afad6ca2153d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--百度统计结束 -->
+</body>
+</html>
